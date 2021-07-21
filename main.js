@@ -16,17 +16,16 @@ content.innerHTML = '';
         if (priceInt >= 1000) {priceClass = 'price_medium';}
         if (priceInt >= 3000) {priceClass = 'price_high';}
         content.innerHTML += 
-        `<div class="grid">
-            <div class="figure">
-                <!-- <a href="${item.link}">TEST</a> -->
+        `<div class="figure">
+            <a href="${item.link}" target="blank">
                 <img class="${priceClass}" src="${item.image_link}">
-                <div class="figcaption">
+                <div class="caption">
                     <h2>${item.title}</h2>
                     <div class="price">${item.price} ₽</div>
-                    <div class="description">Lily likes to play with crayons and pencils</div>
+                    <div class="description">${item.description}</div>
                 </div>
-                <div class="figstatus ${priceClass}"></div>
-            </div>
+                <div class="status ${priceClass}"></div>
+            </a>
         </div>`;
      });
 // }

@@ -1,5 +1,7 @@
 <html>
     <head>
+        <title>Wishlist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,51 +42,56 @@
                 text-align:center;
             } */
 
-
-
             body {
                 background-color: #2f3239;
                 font-family: 'Raleway', sans-serif;
-                padding-top: 50px;
-                padding-left: 10px;
+                padding-top: 10px;
+            }
+
+            #content {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
             }
 
             /* https://tympanus.net/Development/HoverEffectIdeas/ */
-            .grid {
+            /* .grid {
                 position: relative;
                 margin: 0 auto;
-                /* padding: 1em 0 4em; */
                 max-width: 1000px;
                 list-style: none;
                 text-align: center;
-            }
+            } */
 
             /* Common style */
             .figure {
-                position: relative;
+                margin: 5px;
+                min-width: 480px;
+                max-width: 33.3%;
+                height: 360px;
+                flex: 33.3%;
                 float: left;
-                overflow: hidden;
-                margin: 10px 1%;
-                min-width: 320px;
-                max-width: 480px;
-                max-height: 360px;
-                width: 48%;
-                background: #3085a3;
                 text-align: left;
-                /*cursor: pointer;*/
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
             }
 
             .figure img {
                 position: relative;
                 display: block;
-                min-height: 100%;
-                min-width: 100%;
-                opacity: 0.8;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center top;
+                opacity: 1;
                 -webkit-transition: opacity 0.35s;
                 transition: opacity 0.35s;
             }
 
-            .figure .figcaption {
+            .figure .caption {
                 position: absolute;
                 bottom: 0;
                 padding: 1em;
@@ -92,11 +99,11 @@
                 background: #fff;
                 color: #3c4a50;
                 overflow: hidden;
-                height: 110px;
+                height: 150px;
                 -webkit-transition: -webkit-transform 0.35s;
                 transition: transform 0.35s;
-                -webkit-transform: translate3d(0,50%,0);
-                transform: translate3d(0,50%,0);
+                -webkit-transform: translate3d(0,65%,0);
+                transform: translate3d(0,65%,0);
                 opacity: 1;
             }
 
@@ -104,12 +111,12 @@
                 opacity: 0.5;
             }
 
-            .figure:hover .figcaption {
+            .figure:hover .caption {
                 -webkit-transform: translate3d(0,0,0);
                 transform: translate3d(0,0,0);
             }
 
-            .figstatus {
+            .status {
                 position: absolute;
                 bottom: 0;
                 height: 0.5em;
@@ -118,21 +125,20 @@
                 color: #3c4a50;
             }
 
-            .figcaption h2 {
+            .caption h2 {
                 float: left;
-                word-spacing: -0.15em;
                 font-weight: 300;
                 text-transform: uppercase;
-                font-size: 1.25em;
-                width: 280px;
+                font-size: 1em;
+                width: 74%;
             }
 
             .price {
                 float: right;
-                word-spacing: -0.15em;
                 font-weight: 300;
                 text-transform: uppercase;
                 font-size: 1.25em;
+                margin-top: -7px;
             }
 
             .description {
@@ -142,11 +148,6 @@
             .price_low {background-color: greenyellow;}
             .price_medium {background-color: #fff77d;}
             .price_high {background-color: #ff7d7d;}
-
-
-
-
-
 
         </style>
     </head>

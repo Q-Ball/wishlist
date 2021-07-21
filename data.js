@@ -1,8 +1,6 @@
 export let items = [
-    {"title" : "Вафельница Redmond RMB-611", "price":"3090", "link" : "https://www.ozon.ru/product/multipekar-redmond-rmb-611-139350352/", "image_link" : "https://cdn1.ozone.ru/s3/multimedia-j/6028633015.jpg"},
-    {"title" : "День в отеле", "price":"3600", "link" : "http://localhost/2", "image_link" : "img02.jpg"},
-    {"title" : "Косе", "price":"9001", "link" : "http://localhost/3", "image_link" : "img03.jpg"},
-    {"title" : "Мороженка", "price":"1200", "link" : "http://localhost/1", "image_link" : "img01.jpg"},
-    {"title" : "День в отеле", "price":"3600", "link" : "http://localhost/2", "image_link" : "img02.jpg"},
-    {"title" : "Косе", "price":"9001", "link" : "http://localhost/3", "image_link" : "img03.jpg"},
+    {"title" : "Вафельница Redmond RMB-611", "description":"Многофункциональное устройство, заменяющее вафельницу, омлетницу, гриль, кексницу, бутербродницу и множество других приборов.", "price":"3449", "link" : "https://www.ozon.ru/product/multipekar-redmond-rmb-611-139350352/", "image_link" : "https://cdn1.ozone.ru/s3/multimedia-j/6028633015.jpg"},
+    {"title" : "Xiaomi Mi Smart Camera", "description":"PTZ-камера для кругового наблюдения и охраны. С помощью приложения MiHome можно управлять углом поворота камеры. Вертикальный угол можно регулировать вручную.", "price":"2211", "link" : "https://www.ozon.ru/product/ip-kamera-xiaomi-mi-smart-camera-se-ptz-version-mjsxj08cm-198442145/", "image_link" : "https://cdn1.ozone.ru/s3/multimedia-0/wc1200/6022293324.jpg"},
+    {"title" : "Наушники Marshall Mode", "description":"Стереонаушники MARSHALL Mode черного цвета с белыми вставками изготовлены в форме вкладышей. Несмотря на миниатюрный формат, устройство оснащено технологией «большого» звука.", "price":"1999", "link" : "https://www.dns-shop.ru/product/11a5b7236ee13120/provodnaa-garnitura-marshall-mode-cernyj/", "image_link" : "https://ae01.alicdn.com/kf/HTB1nInlPVXXXXa8XXXXq6xXFXXXs/For-Marshall-MODE-With-microphone-earphones-In-ear-headphones-for-iphone-HTC-MP3-MP4-music-Player.jpg"},
+
 ];
