@@ -13,8 +13,8 @@ content.innerHTML = '';
         console.log(item);
         let priceClass = 'price_low';
         let priceInt = parseInt(item.price);
-        if (priceInt >= 1000) {priceClass = 'price_medium';}
-        if (priceInt >= 3000) {priceClass = 'price_high';}
+        if (priceInt >= 2000) {priceClass = 'price_medium';}
+        if (priceInt >= 5000) {priceClass = 'price_high';}
         content.innerHTML += 
         `<div class="figure">
             <a href="${item.link}" target="blank">
