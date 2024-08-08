@@ -1,115 +1,19 @@
-<html>
-    <head>
-        <title>Wishlist</title>
-        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
-        <style>
-            body {
-                background-color: #2f3239;
-                font-family: 'Raleway', sans-serif;
-                padding: 30px 0px;
-            }
-
-            #content {
-                position: relative;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-
-            /* https://tympanus.net/Development/HoverEffectIdeas/ */
-            .figure {
-                margin: 5px;
-                min-width: 400px;
-                max-width: 33.3%;
-                height: 360px;
-                flex: 33.3%;
-                float: left;
-                text-align: left;
-                cursor: pointer;
-                position: relative;
-                overflow: hidden;
-            }
-
-            .figure img {
-                position: relative;
-                display: block;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: center top;
-                opacity: 1;
-                -webkit-transition: opacity 0.35s;
-                transition: opacity 0.35s;
-            }
-
-            .figure .caption {
-                position: absolute;
-                bottom: 0;
-                padding: 1em;
-                width: 100%;
-                background: #fff;
-                color: #3c4a50;
-                overflow: hidden;
-                height: 150px;
-                -webkit-transition: -webkit-transform 0.35s;
-                transition: transform 0.35s;
-                -webkit-transform: translate3d(0,65%,0);
-                transform: translate3d(0,65%,0);
-                opacity: 1;
-            }
-
-            .figure:hover img {
-                opacity: 0.5;
-            }
-
-            .figure:hover .caption {
-                -webkit-transform: translate3d(0,0,0);
-                transform: translate3d(0,0,0);
-            }
-
-            .status {
-                position: absolute;
-                bottom: 0;
-                height: 0.5em;
-                width: 100%;
-                background: #fff;
-                color: #3c4a50;
-            }
-
-            .caption h2 {
-                float: left;
-                font-weight: 300;
-                text-transform: uppercase;
-                font-size: 1em;
-                width: 74%;
-            }
-
-            .price {
-                float: right;
-                font-weight: 300;
-                text-transform: uppercase;
-                font-size: 1.25em;
-                margin-top: -7px;
-            }
-
-            .description {
-                clear: both;
-            }
-
-            .price_low {background-color: greenyellow;}
-            .price_medium {background-color: #fff77d;}
-            .price_high {background-color: #ff7d7d;}
-
-        </style>
-    </head>
-    <body>
-        <div id="content">Loading...</div>
-        <script type="module" src="main.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		<link href="./style.css" rel="stylesheet">
+		<title>Wishlist</title>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="loader" class="loader"><span class="spinner"></span></div>
+		<div id="cards" class="cards"></div>
+		<script type="module" src="main.js"></script>
+	</body>
 </html>
